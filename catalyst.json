@@ -1,0 +1,6 @@
+{
+  "client": {
+    "source": "portfolio",
+    "plugin": "zcatalyst-cli-plugin-react"
+  }
+}
