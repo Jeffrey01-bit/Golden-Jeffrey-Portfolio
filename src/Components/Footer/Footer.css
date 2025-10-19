@@ -65,20 +65,117 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
-@media (max-width: 768px) {
+/* Small phones */
+@media (max-width: 480px) {
   .footer {
-    margin: 50px 70px;
+    margin: 30px 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-top-left img {
+    height: 60px;
+  }
+  .footer-top-left p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .footer-top-right {
+    gap: 20px;
+  }
+  .footer-email-input {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    padding-right: 20px;
+  }
+  .footer-email-input input {
+    font-size: 16px;
+    width: 100%;
+  }
+  .footer-subscribe {
+    font-size: 16px;
+    padding: 15px 30px;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer-bottom-right {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+/* Medium phones */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    margin: 40px 30px;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer-top-left img {
+    height: 65px;
+  }
+  .footer-top-left p {
+    font-size: 16px;
+  }
+  .footer-top-right {
+    gap: 22px;
+  }
+  .footer-email-input {
+    gap: 18px;
+    padding: 16px 22px;
+    padding-right: 55px;
+  }
+  .footer-subscribe {
+    font-size: 16px;
+    padding: 16px 35px;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 22px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer-bottom-right {
+    gap: 35px;
+    justify-content: center;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    margin: 50px 40px;
   }
   .footer-top-left img {
     height: 70px;
   }
-  .footer-top {
-    flex-direction: column;
-    gap: 50px;
+  .footer-top-left p {
+    font-size: 16px;
+  }
+  .footer-top-right {
+    gap: 25px;
+  }
+  .footer-email-input {
+    padding: 14px 20px;
+    padding-right: 60px;
+  }
+  .footer-email-input input {
+    font-size: 14px;
+  }
+  .footer-subscribe {
+    padding: 16px 35px;
+    font-size: 16px;
   }
   .footer-bottom {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 50px;
+    font-size: 14px;
   }
 }
